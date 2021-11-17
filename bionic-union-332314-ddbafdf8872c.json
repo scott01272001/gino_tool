@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "bionic-union-332314",
+  "private_key_id": "ddbafdf8872c49a28960afb35505982dc8c4b927",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCpnrYdtX04acCq\ncG4WjDuE13ktDm0H1qCo1em3k/T+6n0k9xJmQqmTii+K+TrwYkpeuU0sImjxiSeR\nnzzqu6EPcPwqY1fJkdM8Jp7EyBMr94ucbNyqCzEEj9AvPUN7fFNWQbe8wTxjKsqS\ngmKzYmVuHcCnxmW+BYM5WTZ2hX3efJ1J4pfzDGVhcg2eBUfd62Tb02vCGb/T7lxO\nRzfhgzEvXZA1xzrFYj1R8jy9JQX91rCduBPBb/YOK/pSIr+C5rMibFasAH2vc8dM\njXhLEFag2177HS+AwvUk+sHykaECPOA9JMiApQO0/Bb6BK6zvFxJjw2xFGYlzGIM\nY0eG3QRFAgMBAAECggEAJn4KdR6BHsK9AtDF4t8LCL//U07BRnSZ/AajZdIxWIIt\nSSy6o7NAGWfUFzUs/21G1E036qqaZynJbX4WDGztBXyN9S6bNvadWbqn8B85XpJs\nP+DiiMJGavMZ+wZroIPbw6jhQfgWNKj61Jm7PVs4im89D7Xx09gbafHJbscng8wj\ntX5kNzJI7SLFGNzsac40lfm0/8Kyyccoy0p9XTP17M+dltCeJEb+h8n4EKrju2p/\nm3XoTxdQyGJuLJJ3144avlNFQXSXTCoupDM4B2JAxts4g9Wmk45KefeD621+ULVs\nqr8cn+AC4D2ezuPTYi60qdd8FOxgLJUnCdDt2ksJVwKBgQDmYcBUPbIBT9SaK1DZ\nfOzNv4LzTxlur21u4AHIIXJfYpEKiaeUumUZgNswXlrTxivStUmZyBPBJGqXKN2b\nuPKhLgaXAL/fcnpKZYqpyhU9teo/sfUCLkV0sXvGFgVZVEPHIfJM7gfG0fV3Rl8q\nX+oVb6COizoC+vtrH7ecw6akpwKBgQC8e0KR0/djaoRF4g4hwFozGZ/DNKtuKgEK\n23CNZ6d9uiXgXmUWJO0raVJVE1Zn/EvBkUX8pXqtA2HCeCwCpRe9J/nUnzKGYpxw\nGRPKu4AHx8RntVrYT/iH7P503HI5VnMUeRbVEC436qJSrp449dQRzwZP6I7zJ46x\nSAU5Jy/xMwKBgAtuhlCnzxFpmK8dvyFLpaSAAEt6fVSUt+VskCoSHs7E4VWYhwxG\nQ4YEctvvkqo3hy0pecF7wB8xY2ikynpTrxZ4ZjNQAjVgRNk0OLE8KdmqETmf5vx4\nt1GXDQFDTnikSciz0oYmuZQQDxIgF9DOeZsesuTf270SHy+tnzrUKoy5AoGAO12P\ncCMVTojkNKao0NSnFGVDvtY+EKrGPUc0wjUduioBeBQDPuBOm1fHCOjYVFRRABzj\nsFnms8vW5Mu5APRC799Bf0jNPyqcH2qmozo/bzPqlse2X1+A5j8tPl2Y1Jp4EMC7\nAkzgYdhTXDuHtmUncJyGXnDfZZLWDNykWIYRQaUCgYBaG/YJmBOdJ4S7Tz2taNGA\njwK8gVtnv8iyY5C+nml1QewwA7t9hBcS2r1ZczYB2lYoMlciu+AmqYvd6Z98QzKX\nUbIsuSFTH5a9LDromL3k5V8NLZXY8jRYJ965Zv015Ng/oq2k2RGvnBn3W5YSkZV0\nWRppoDAXIJgHspCAiufE6g==\n-----END PRIVATE KEY-----\n",
+  "client_email": "scott0127@bionic-union-332314.iam.gserviceaccount.com",
+  "client_id": "116834377315996428651",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/scott0127%40bionic-union-332314.iam.gserviceaccount.com"
+}
