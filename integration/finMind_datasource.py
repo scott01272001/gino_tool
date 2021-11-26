@@ -4,15 +4,13 @@ from integration.datasource_interface import DatasourceInterface
 from loguru import logger
 import pandas as pd
 
-logger.add(sys.stderr, level="INFO")
-
 
 class FinMindDatasource(DatasourceInterface):
 
     _data_loader: DataLoader
 
     def __init__(self, user_id: str, password: str):
-        init_success = self._data_loader_init()
+        init_success = self._data_loader_init(user_id, password)
         if not init_success:
             logger.error('Init finMind data loader failed.')
 
@@ -31,6 +29,6 @@ class FinMindDatasource(DatasourceInterface):
         return data
 
     def get_month_revenue(self, stock_id: str, start_date: str, end_date: str, timeout: int = None) -> pd.DataFrame:
-        data = self._api.taiwan_stock_month_revenue(
+        data = self._data_loader.taiwan_stock_month_revenue(
             stock_id=stock_id, start_date=start_date, end_date=end_date, timeout=timeout)
         return data

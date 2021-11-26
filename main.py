@@ -1,23 +1,25 @@
-from FinMind.data import DataLoader
-from fundamental_service import FundamentalService
-from google_sheet_service import SheetService
+import sys
+from dependency_injector import containers
+from adapter.finMind_datasource_adapter import FinMindDatasourceAdapter
+from containers import Container
+from integration.datasource_interface import DatasourceInterface
+from integration.finMind_datasource import FinMindDatasource
+from dependency_injector.wiring import Provide, inject
 
-user_id:str = 'scott0127'
-password:str = 'yu82618220'
-stock_id: str = '2330'
-start_date: str = '2021-11-01'
-end_date: str = '2021-11-16'
 
-api = DataLoader()
-api.login(user_id, password)
-fundamental_service = FundamentalService(api)
+data_source: DatasourceInterface
 
-# data = fundamental_service.get_stock_month_revenue(stock_id, start_date, end_date)
-# print(data.iloc[-10:])
 
-data = fundamental_service.get_taiwan_stock_financial_statement(stock_id, start_date, end_date)
-print(data.iloc[-17:])
+@inject
+def main(data_source: DatasourceInterface = Provide[Container.finMind_datasource]) -> None:
 
-# sheet_service = SheetService()
-# print(type(sheet_service.scoped_credentials))
+    adapter: FinMindDatasourceAdapter = FinMindDatasourceAdapter(data_source)
 
+    data = adapter.get_financial_statement_from_source('2330', '2021-2')
+    print(data)
+
+
+if __name__ == "__main__":
+    container = Container()
+    container.wire(modules=[__name__])
+    main()
