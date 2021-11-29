@@ -1,5 +1,5 @@
-from datetime import date
+import pandas as pd
 
-d = date.fromisoformat('2020-01-01')
-d2 = date.today()
-print(d2.year)
+df = pd.read_csv('financial_statement.csv')
+
+print(df)

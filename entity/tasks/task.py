@@ -11,10 +11,10 @@ class EvaluateTask(Task):
     query_end_date: str
     query_quarter: str
 
-    # _financial_statement: pd.DataFrame
-    # _month_revenue: pd.DataFrame
+    __financial_statement: pd.DataFrame
+    __month_revenue: pd.DataFrame
 
-    def __init__(self, query_stock_id: str, query_start_date: str, query_end_date: str, query_quarter: str):
+    def __init__(self, query_stock_id: str = None, query_start_date: str = None, query_end_date: str = None, query_quarter: str = None):
         self.query_stock_id = query_stock_id
         self.query_start_date = query_start_date
         self.query_end_date = query_end_date
@@ -22,16 +22,20 @@ class EvaluateTask(Task):
 
     @property
     def financial_statement(self) -> pd.DataFrame:
-        return self._financial_statement
+        return self.__financial_statement
 
-    @property.setter
+    @financial_statement.setter
     def financial_statement(self, financial_statement: pd.DataFrame):
-        self._financial_statement = financial_statement
+        self.__financial_statement = financial_statement
 
     @property
     def month_revenue(self) -> pd.DataFrame:
-        return self._month_revenue
+        return self.__month_revenue
 
-    @property.setter
+    @month_revenue.setter
     def month_revenue(self, month_revenue: pd.DataFrame):
-        self._month_revenue = month_revenue
+        self.__month_revenue = month_revenue
+
+    @property
+    def last_revenue(self):
+        return self.__last_revenue

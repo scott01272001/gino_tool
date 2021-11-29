@@ -19,6 +19,6 @@ class TestFinMindAdapter:
     def test_get_month_revenue_from_source(self, container: Container):
         adapter: FinMindDatasourceAdapter = container.finMind_adapter.provided()
         data = adapter.get_month_revenue_from_source(
-            '2330', '2020-11-01', '2020-11-30')
+            '2330', '2020-10-01', '2020-11-30')
         print(data)
         assert not data.empty

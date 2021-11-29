@@ -1,5 +1,5 @@
 import abc
-from entity.task import Task
+from entity.tasks.task import Task
 
 
 class EngineInterface(metaclass=abc.ABCMeta):
