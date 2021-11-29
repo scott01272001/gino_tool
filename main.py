@@ -1,9 +1,6 @@
-import sys
-from dependency_injector import containers
-from adapter.finMind_datasource_adapter import FinMindDatasourceAdapter
+from adapter.datasource_adapter.finMind_datasource_adapter import FinMindDatasourceAdapter
 from containers import Container
 from integration.datasource_interface import DatasourceInterface
-from integration.finMind_datasource import FinMindDatasource
 from dependency_injector.wiring import Provide, inject
 
 

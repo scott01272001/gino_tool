@@ -1,6 +1,6 @@
 from dependency_injector import containers, providers
-from integration import finMind_datasource
-from adapter import finMind_datasource_adapter
+from integration.finMind_datasource import FinMindDatasource
+from adapter.datasource_adapter.finMind_datasource_adapter import FinMindDatasourceAdapter
 
 
 class Container(containers.DeclarativeContainer):
@@ -8,12 +8,12 @@ class Container(containers.DeclarativeContainer):
     config = providers.Configuration(yaml_files=['resource/config.yml'])
 
     finMind_datasource = providers.Singleton(
-        finMind_datasource.FinMindDatasource,
+        FinMindDatasource,
         user_id=config.datasource.finMind.user_id,
-        password=config.datasource.finMind.password()
+        password=config.datasource.finMind.password
     )
 
     finMind_adapter = providers.Singleton(
-        finMind_datasource_adapter.FinMindDatasourceAdapter,
+        FinMindDatasourceAdapter,
         datasource_interface=finMind_datasource
     )

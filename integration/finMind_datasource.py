@@ -1,4 +1,3 @@
-import sys
 from FinMind.data.data_loader import DataLoader
 from integration.datasource_interface import DatasourceInterface
 from loguru import logger
